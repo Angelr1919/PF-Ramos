@@ -8,40 +8,24 @@ body{
     background-color: #86A789;
     
 }
-main{
-    background-color: #86A789;
-}
-/*header*/
-header{
-    width: 100%;
-}
-.nav_list{
-    width:100%;
-    background-color: #3A4D39;
-    list-style: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+/*header*/
+header nav{
+    background-color: #3A4D39;
+    
 }
-li img{
-    height: 70px;
+
+.logo img{
+    height: 80px;
     color: white;
     filter: invert(1);
+    padding-left: 40px;
     
     
 }
-.nav_list li a{
-    display: inline-block;
-    text-align: left; 
-    padding: 0 20px;
-    color: #ECE3CE;
-    text-decoration: none;
-    font-size: 15px;
-   
+.sidebar {
+    background-color: #3A4D39;
     
-   
 }
 
 /*Reserva*/
@@ -52,6 +36,7 @@ li img{
 }
 .contenedor_form{
     display: flex;
+    
 }
 .contenedor_form h1{
     color:#ECE3CE;
@@ -78,6 +63,7 @@ li img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
     
 }
 
@@ -128,6 +114,7 @@ li img{
 .cont_menu{
     display: flex;
     flex-wrap: wrap;
+    
  
 }
 
@@ -148,7 +135,7 @@ li img{
     font-family: 'Montserrat', sans-serif;
 }
 .text_menu li{
-    font-size:14px;
+    font-size:12px;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -176,6 +163,8 @@ li img{
     grid-template-columns:repeat(3,1fr) ;
     gap: 1px;
     margin-left: 20px;
+    margin-top: 20px;
+   
 }
 
 .text_tienda{
@@ -190,9 +179,8 @@ li img{
 }
 /*footer*/
 .img_footer img{
-    
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     filter: invert(1);
     padding-right: 10px;
 
@@ -205,15 +193,15 @@ li img{
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    bottom: 0;
     width: 100%;
 
 }
-.text_footer{
+.text_footer h2{
     color:#ECE3CE;
-    font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
+
 
 /*Media querrie*/
 @media only screen and (max-width: 420px){
@@ -227,9 +215,7 @@ li img{
         display: row;
         justify-content: center;
         align-items: center;
-        font-size: 10;
-        
-        
+    
         
     }
     li img{
