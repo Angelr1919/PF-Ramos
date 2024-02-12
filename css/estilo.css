@@ -1,26 +1,35 @@
-/*header*/
-*{  margin: 0%;
+
+*{ 
+    margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 body{
     background-color: #86A789;
+    
+}
+main{
+    background-color: #86A789;
+}
+/*header*/
+header{
+    width: 100%;
 }
 .nav_list{
-    /*background-color: #4F6F52;*/
+    width:100%;
     background-color: #3A4D39;
     list-style: none;
-    margin: 0% auto;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75px;
+
 }
 li img{
     height: 70px;
     color: white;
     filter: invert(1);
+    
     
 }
 .nav_list li a{
@@ -29,9 +38,12 @@ li img{
     padding: 0 20px;
     color: #ECE3CE;
     text-decoration: none;
-  
+    font-size: 15px;
+   
     
+   
 }
+
 /*Reserva*/
 .img_form{
     height: 700px;
@@ -55,13 +67,20 @@ li img{
 }
 /*Inicio*/
 .img_ini{
-    height: 500px;
+    height: 100%;
     width: 500px;
+    object-fit:cover;
+
+
 }
 
 .cont_ini{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
+
 .tex_ini{
     color:#ECE3CE;
     margin-top: 30px;
@@ -72,17 +91,19 @@ li img{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
 }
+
 .tex_ini p{
     padding-top: 40px;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
+    
 }
 
 .img_ini2{
     height: 500px;
     width: 500px;
 }
-.tex_ini2 p{
+.tex_ini2 {
     color:#ECE3CE;
     margin-top: 30px;
     padding-left: 25px;
@@ -93,25 +114,29 @@ li img{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     
+    
 }
 
 /*Menu*/
 .text_menu{
     margin-top: 0px;
-    margin-right: 50px;
+    margin-right: 40px;
     padding-left: 40px;
     font-family: 'Montserrat', sans-serif;
 
 }
 .cont_menu{
     display: flex;
-
+    flex-wrap: wrap;
+ 
 }
 
 .img_menu{
-    width: 500px;
+    width: 400px;
     height: 500px;
     display: flex;
+    object-fit: cover;
+    
 }
 .menu{
     padding-top: 30px;
@@ -123,7 +148,7 @@ li img{
     font-family: 'Montserrat', sans-serif;
 }
 .text_menu li{
-    font-size:17px;
+    font-size:14px;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -179,11 +204,143 @@ li img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 40px;
+    bottom: 0;
+    width: 100%;
 
 }
 .text_footer{
     color:#ECE3CE;
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+}
+
+/*Media querrie*/
+@media only screen and (max-width: 420px){
+
+  
+    .nav_list{
+        width:100%;
+        background-color: #3A4D39;
+        list-style: none;
+        text-align: center;
+        display: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 10;
+        
+        
+        
+    }
+    li img{
+        height: 30px;
+    
+    }
+    .nav_list li a{
+        text-align: center; 
+        padding: 0 15px;
+        font-size: 6px;
+        
+       
+    }
+
+        /*Inicio*/
+    .img_ini{
+        height: 300px;
+        width: 300px;
+        justify-content: center;
+
+
+    }
+
+    .tex_ini{
+        color:#ECE3CE;
+        margin-top: 30px;
+        padding-left: 25px;
+        width: 800px;
+        font-size: 15px;
+        padding-right: 30px;
+        text-align: justify;
+    }
+
+    .tex_ini p{
+        padding-top: 40px;
+        text-align: justify;
+        
+    }
+
+    .img_ini2{
+        height: 300px;
+        width:  300px;
+        justify-content: center;
+    }
+    .tex_ini2 {
+        
+        margin-top: 30px;
+        padding-left: 25px;
+        padding-top: 15px;
+        width: 800px;
+        font-size: 15px;
+        text-align: justify;
+        padding-bottom: 10px;
+        
+    }
+
+        /* Menu */
+
+    .img_menu{
+        width: 250px;
+        height: 250px;
+        justify-content: center;
+        padding-left: 120px;
+        
+    }
+    .menu{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .text_menu li{
+        font-size:10px;
+       
+
+    }
+    .masas{
+        padding-top: 45px;
+        padding-bottom: 20px;
+    
+    }
+    .cont_text{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        
+}
+
+    /*footer*/
+    .img_footer img{
+        
+        height: 20px;
+        width: 20px;
+        filter: invert(1);
+        padding-right: 10px;
+
+    }
+
+    .cont_footer{
+        background-color:#4F6F52;
+        text-align: center;
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .text_footer{
+        color:#ECE3CE;
+        font-size: 5px;
+        
+    }
+
 }
