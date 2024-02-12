@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="Icon" href="../assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <nav> <!--botonera de menu-->
+            <ul class="nav_list">
+                <li class="logo"><img src="../assets/nuestrocafe.png" alt="Logo"></li>
+                <li class="inicio"><a href="/index.html" class="nav-link">Inicio</a></li>
+                <li class="menu"><a href="../pages/menu.html" class="nav-link">Menu</a></li>
+                <li class="reserva"><a href="../pages/reservas.html" class="nav-link">Reserva</a></li>
+                <li class="contacto"><a href="../pages/contacto.html"class="nav-link">Contacto</a></li>
+                <li class="tienda"><a href="../pages/tienda.html" class="nav-link">tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor_form">
+            <img class="img_form" src="../assets/imagenes/frente.jpg" alt="imagen de formulario">
+                <div class="texto_form">
+                 <h1>Reserva</h1>
+                    <form action="">
+                        <div class="form">
+                            <label for="name">Escribe tu nombre</label>
+                            <input type="text" name="name">
+                        </div> 
+                        <div class="form">
+                            <label for="last name">Escribe tu apellido</label>
+                            <input type="text" name="last name">
+                        </div>  
+                        <div class="form">
+                            <label for="number">DNI</label>
+                            <input type="number" name="number" >
+                        </div>
+                        <div class="form">
+                            <label for="email">Correo electronico</label>
+                            <input type="email">
+                        </div>
+                        <div class="form">
+                            <label for="localidad">localidad</label>
+                            <input type="text" name="localidad">
+                        </div>
+                        <div class="form">
+                            <label for="fecha">Fecha y hora</label>
+                            <input type="datetime-local">
+                        </div>
+                        <div class="form">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="cont_footer">
+            <div class="text_footer">
+                <h2>Nuestro cafe. Reservados todos los derechos</h2>
+                <div class="img_footer">
+                    <img src="../assets/imagenes/instagram.png" alt="instragram">
+                    <img src="../assets/imagenes/facebook.png" alt="facebook">
+                    <img src="../assets/imagenes/whatsapp.png" alt="whatsapp">
+                </div>
+            </div>   
+        </div>
+    </footer>
+</body>
+</html>
