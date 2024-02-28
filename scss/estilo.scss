@@ -1,0 +1,425 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*variable*/
+$color_de_letra:#ECE3CE;
+
+/*mixin*/
+@mixin flex{
+    display: flex;
+}
+
+
+
+body{
+    background-color: #86A789;
+}
+/*header*/
+header{
+    nav{
+        background-color: #3A4D39;
+        .logo img{
+            height: 80px;
+            color: white;
+            filter: invert(1);
+            padding-left: 40px;
+    
+        }
+
+        .sidebar{
+            background-color: #3A4D39;
+        }
+    }
+}
+/*inicio*/
+main{
+    
+    .cont_ini{
+        @include flex;
+        justify-content: center;
+        margin-left: 20px;
+    
+        .tex_ini{
+            h1{
+                color:$color_de_letra;
+                margin-top: 25px;
+                padding-left: 25px;
+                font-size: 40px;
+                padding-right: 30px;
+                font-family: 'Montserrat', sans-serif;
+                
+            }
+            p{
+                padding-left: 25px;
+                padding-top: 25px;
+                padding-right: 30px;
+                font-family: 'Montserrat', sans-serif;
+                text-align: justify;
+                color:$color_de_letra;
+                font-size: 20px;
+                
+            }
+        }
+
+        .img_ini{
+            height: 100%;
+            width: 500px;
+            object-fit:cover;
+        }
+
+      
+
+    }
+
+    .cont_ini2{
+        @include flex;
+        justify-content: center;
+
+        .tex_ini2{
+            p{
+                padding-left: 35px;
+                padding-top: 40px;
+                padding-right: 20px;
+                font-family: 'Montserrat', sans-serif;
+                text-align: justify;
+                color:$color_de_letra;
+                font-size: 20px;
+                
+            }
+        }
+
+        .img_ini2{
+            height: 700px;
+            width: 600px;
+            margin-right: 20px; 
+            object-fit:cover;
+            
+            
+        }
+    }
+}
+/*Menu*/
+main{
+    .cont_menu{
+        @include flex;
+        justify-content: center;
+        .text_menu{
+            color:$color_de_letra;
+            font-family: 'Montserrat', sans-serif;
+            margin-left: 15px;
+            margin-right: 10px;
+            
+            ul{
+                li{
+                    font-size:13px;
+                }
+            }
+        
+        }
+
+        .img_menu{
+            width: 350px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+        }
+
+        }
+    }
+
+  
+/*reservas*/
+main{
+    .cont_form{
+        @include flex;
+        .img_form{
+            height: 100%;
+            width: 700px;  
+            border-radius: 1%;
+        }
+    }
+    .texto_form{
+        h1{
+            color:$color_de_letra;
+            margin-top: 20px;
+            padding-left: 25px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        form{
+            .form{
+                color: $color_de_letra;
+                margin-top: 25px;
+                padding-left: 25px;
+            }
+        }
+    }
+}
+/*contacto*/
+main{
+    justify-content: center;
+    .cont_text{
+        color: $color_de_letra;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding-left: 25px;
+        text-align: center;
+        
+    }
+    .maps{
+        text-align: center;
+        iframe{
+           
+            width:800px; 
+            height:350px;
+        }
+        
+        
+    }
+}
+/*tienda*/
+main{
+    .cont_items{
+        display: grid;
+        grid-template-columns:repeat(2,1fr) ;
+        gap: 2px;
+        margin-left: 60px;
+        margin-top: 20px;
+        
+        .item{
+            .img_prod{
+                width: 300px;
+                height: 300px;
+            }
+            &:hover{
+                transform: scale(1.05);
+            }
+
+            .inf_prod{
+                padding-top: 20px;
+                padding-bottom: 30px;
+                color:$color_de_letra;
+                font-family: 'Montserrat', sans-serif;
+
+                h2{
+                    font-size: 20px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+
+                p{
+                    font-size:15px ;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                
+            }
+        }
+    }
+}
+
+
+/*footer*/
+footer{
+    .cont_footer{
+        .text_footer{
+                background-color:#4F6F52;
+                text-align: center;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+                width: 100%;
+
+                h2{
+                    color:$color_de_letra;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 15px;
+                    
+                }
+                
+                .img_footer img{
+                    height: 30px;
+                    width: 30px;
+                    filter: invert(1);
+                    padding-right: 10px;
+                    padding-bottom: 10px;
+                    
+                } 
+                
+
+         }
+        
+         }
+}
+
+/*version tablet*/
+@media only screen and (max-width: 800px){
+/*inicio*/
+  main{
+    .cont_ini{
+        text-align: center;
+           .img_ini{
+            
+                    height: 300px;
+                    width: 300px;
+                   
+                }
+                .tex_ini{
+                    h1{
+                        font-size: 20px;
+                    }
+                    p{
+                       
+                        font-size: 13px;
+                    }
+                   
+                }
+            }
+            .cont_ini2{
+                
+                
+    
+                .img_ini2{
+                    height: 300px;
+                    width:  300px;
+                  
+                }
+    
+                .tex_ini2{
+                    p{
+                        font-size: 13px;
+                       
+                    }
+                    
+                }
+            }
+    
+} 
+/*menu*/
+main{
+    .cont_menu{
+        flex-wrap: wrap;
+    }
+    
+ }
+/*Reservas*/
+main{
+    .cont_form{
+        flex-wrap: wrap;
+        justify-content: center;
+        .img_form{
+            width: 500px;
+            height: 500px;
+           
+        }
+        
+    }
+}
+/*contactos*/
+main{
+    .maps{
+        margin-left: 10px;
+        iframe{
+            width: 300px;
+            height: 300px;
+        }
+       }
+    
+}
+
+}
+
+/*Media querrie version mobile*/
+@media only screen and (max-width: 480px){
+    /*inicio*/
+    main{
+        .cont_ini{
+            flex-wrap: wrap;
+
+            .img_ini{
+                height: 300px;
+                width: 300px;
+                
+
+            }
+            .tex_ini{
+                font-size: 15px;
+            }
+        }
+        .cont_ini2{
+            
+            flex-wrap: wrap;
+
+            .img_ini2{
+                height: 300px;
+                width:  300px;
+              
+            }
+
+            .tex_ini2{
+                font-size: 15px;
+            }
+        }
+
+    } 
+ /*menu*/
+ main{
+    .cont_menu{
+        flex-wrap: wrap;
+
+        .img_menu{
+            width: 250px;
+            height: 250px;
+            justify-content: center;
+            
+        }
+
+    }
+    
+ }
+/*reservas*/
+main{
+    .cont_form{
+        flex-wrap: wrap;
+        justify-content: center;
+        .img_form{
+            width: 350px;
+            height: 350px;
+           
+           
+        }
+        
+        
+    }
+    
+}
+
+/*contactos*/
+main{
+    .maps{
+        margin-left: 10px;
+        iframe{
+            width: 300px;
+            height: 300px;
+        }
+       }
+    
+}
+/*tienda*/
+main{
+    .cont_items{
+        grid-template-columns:repeat(1,1fr) ;
+
+        .item{
+            .img_prod{
+                width: 150px;
+                height: 150px;
+            }
+
+           
+        }
+
+    }
+}
+
+}
