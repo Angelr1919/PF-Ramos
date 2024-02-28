@@ -186,53 +186,8 @@ footer .cont_footer .text_footer .img_footer img {
   padding-bottom: 10px;
 }
 
-/*version tablet*/
-@media only screen and (max-width: 800px) {
-  /*inicio*/
-  main .cont_ini {
-    text-align: center;
-  }
-  main .cont_ini .img_ini {
-    height: 300px;
-    width: 300px;
-  }
-  main .cont_ini .tex_ini h1 {
-    font-size: 20px;
-  }
-  main .cont_ini .tex_ini p {
-    font-size: 13px;
-  }
-  main .cont_ini2 .img_ini2 {
-    height: 300px;
-    width: 300px;
-  }
-  main .cont_ini2 .tex_ini2 p {
-    font-size: 13px;
-  }
-  /*menu*/
-  main .cont_menu {
-    flex-wrap: wrap;
-  }
-  /*Reservas*/
-  main .cont_form {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  main .cont_form .img_form {
-    width: 500px;
-    height: 500px;
-  }
-  /*contactos*/
-  main .maps {
-    margin-left: 10px;
-  }
-  main .maps iframe {
-    width: 300px;
-    height: 300px;
-  }
-}
 /*Media querrie version mobile*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
   /*inicio*/
   main .cont_ini {
     flex-wrap: wrap;
