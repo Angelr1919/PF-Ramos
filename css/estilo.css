@@ -39,9 +39,7 @@ main .cont_ini .tex_ini h1 {
   font-family: "Montserrat", sans-serif;
 }
 main .cont_ini .tex_ini p {
-  padding-left: 25px;
   padding-top: 25px;
-  padding-right: 30px;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
   color: #ECE3CE;
@@ -57,9 +55,7 @@ main .cont_ini2 {
   justify-content: center;
 }
 main .cont_ini2 .tex_ini2 p {
-  padding-left: 35px;
   padding-top: 40px;
-  padding-right: 20px;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
   color: #ECE3CE;
@@ -73,6 +69,9 @@ main .cont_ini2 .img_ini2 {
 }
 
 /*Menu*/
+main {
+  min-height: 81vh;
+}
 main .cont_menu {
   display: flex;
   justify-content: center;
@@ -80,15 +79,15 @@ main .cont_menu {
 main .cont_menu .text_menu {
   color: #ECE3CE;
   font-family: "Montserrat", sans-serif;
-  margin-left: 15px;
-  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 40px;
 }
 main .cont_menu .text_menu ul li {
   font-size: 13px;
 }
 main .cont_menu .img_menu {
-  width: 350px;
-  height: 300px;
+  width: 400px;
+  height: 380px;
   display: flex;
   justify-content: center;
 }
@@ -100,7 +99,6 @@ main .cont_form {
 main .cont_form .img_form {
   height: 100%;
   width: 700px;
-  border-radius: 1%;
 }
 main .texto_form h1 {
   color: #ECE3CE;
@@ -112,6 +110,12 @@ main .texto_form form .form {
   color: #ECE3CE;
   margin-top: 25px;
   padding-left: 25px;
+}
+main .texto_form form .form .btn {
+  border: 0;
+  background-color: #3A4D39;
+  border-radius: 25%;
+  color: #ECE3CE;
 }
 
 /*contacto*/
@@ -144,8 +148,10 @@ main .cont_items {
 main .cont_items .item .img_prod {
   width: 300px;
   height: 300px;
+  transition: 0.3s;
+  border-radius: 10%;
 }
-main .cont_items .item:hover {
+main .cont_items .item:hover img {
   transform: scale(1.05);
 }
 main .cont_items .item .inf_prod {
@@ -162,6 +168,12 @@ main .cont_items .item .inf_prod p {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
 }
+main .cont_items .item .inf_prod .btn {
+  border: 0;
+  background-color: #3A4D39;
+  border-radius: 10%;
+  color: #ECE3CE;
+}
 
 /*footer*/
 footer .cont_footer .text_footer {
@@ -170,7 +182,7 @@ footer .cont_footer .text_footer {
   display: grid;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100%;
 }
 footer .cont_footer .text_footer h2 {
@@ -178,12 +190,11 @@ footer .cont_footer .text_footer h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
 }
-footer .cont_footer .text_footer .img_footer img {
-  height: 30px;
+footer .cont_footer .text_footer .Redes a {
+  text-decoration: none;
+  font-size: 20px;
   width: 30px;
-  filter: invert(1);
-  padding-right: 10px;
-  padding-bottom: 10px;
+  color: #ECE3CE;
 }
 
 /*Media querrie version mobile*/
@@ -196,8 +207,11 @@ footer .cont_footer .text_footer .img_footer img {
     height: 300px;
     width: 300px;
   }
-  main .cont_ini .tex_ini {
-    font-size: 15px;
+  main .cont_ini .tex_ini h1 {
+    font-size: 30px;
+  }
+  main .cont_ini .tex_ini p {
+    font-size: 16px;
   }
   main .cont_ini2 {
     flex-wrap: wrap;
@@ -206,8 +220,8 @@ footer .cont_footer .text_footer .img_footer img {
     height: 300px;
     width: 300px;
   }
-  main .cont_ini2 .tex_ini2 {
-    font-size: 15px;
+  main .cont_ini2 .tex_ini2 p {
+    font-size: 16px;
   }
   /*menu*/
   main .cont_menu {
